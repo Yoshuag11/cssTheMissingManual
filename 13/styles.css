@@ -127,4 +127,26 @@ footer {
 footer a {
 	color: white;	
 }
+
 /* add tutorial styles below here */
+.sidebar1 {
+	float: left;
+	width: 20%;
+	padding: 0 20px 0 10px;
+}
+
+.main {
+	float: left;
+	width: 60%;
+	padding: 0 20px 0 10px;
+}
+
+.sidebar2 {
+	float: right;
+	width: 20%;
+	padding: 0 20px 0 10px;
+}
+
+footer {
+	clear: both;
+}

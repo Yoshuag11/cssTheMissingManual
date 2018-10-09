@@ -35,24 +35,71 @@ table {
 } 
 /* end reset browser styles */
 
-/* BASIC */
-body {
-	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
-	padding: 20px;
-}
+	/* BASIC */
+	body {
+		font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+		padding: 20px;
+	}
 
+	.mainNav {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		/* width: 175px; */
+	}
 
+	.mainNav li {
+		float: left;
+		width: 12em;
+	}
 
+	.mainNav a {
+		color: #000;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		border: 1px dashed #999;
+		border-right: none;
+		padding: 7px 5px;
+		display: block;
+		background-color: #e7e7e7;
+		background-image: url(images/nav.png);
+		background-repeat: no-repeat;
+		background-position: 0 2px;
+		padding: 7px 5px 7px 15px;
+	}
+
+	.mainNav li:last-of-type a {
+		border-right: 1px dashed #999;
+	}
+
+	.mainNav a:hover {
+		font-weight: bold;
+		background-color: #b2f511;
+		background-position: 3px 50%;
+		padding-left: 22px;
+	}
+
+	.home .homeLink, .feature .featureLink,
+	.expert .expertLink, .quiz .quizLink
+	.project .projectLink, .horoscope .horoscopeLink {
+		background-color: #fff;
+		background-position: 3px 100%;
+		padding-right: 15px;
+		padding-left: 30px;
+		font-weight: bold;
+	}
 </style>
 </head>
-<body>
-  <ul>
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/features/">Features</a></li>
-    <li><a href="/experts/">Experts</a></li>
-    <li><a href="/quiz/">Quiz</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/horoscopes/">Horoscopes</a></li>
-  </ul>
+<body class="feature">
+	<ul class="mainNav">
+		<li><a href="/index.html" class="homeLink">Home</a></li>
+		<li><a href="/features/" class="featureLink">Features</a></li>
+		<li><a href="/experts/" class="expertLink">Experts</a></li>
+		<li><a href="/quiz/" class="quizLink">Quiz</a></li>
+		<li><a href="/projects/" class="projectLink">Projects</a></li>
+		<li><a href="/horoscopes/" class="horoscopeLink">Horoscopes</a></li>
+	</ul>
 </body>
 </html>
