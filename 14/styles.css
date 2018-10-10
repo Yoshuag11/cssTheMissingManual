@@ -112,26 +112,8 @@ footer .copyright {
 }
 
 /* add tutorial styles here */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+header .badge {
+	position: absolute;
+	top: -20px;
+	left: -90px;
+}

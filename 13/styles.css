@@ -139,6 +139,8 @@ footer a {
 	float: left;
 	width: 60%;
 	padding: 0 20px 0 10px;
+	border-left: 1px dashed rgb(153, 153, 153);
+	border-right: 1px dashed rgb(153, 153, 153);
 }
 
 .sidebar2 {
@@ -149,4 +151,13 @@ footer a {
 
 footer {
 	clear: both;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+nav ul, header h1, footer p, .contentWrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 }
