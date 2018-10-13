@@ -1,0 +1,50 @@
+@import "five-stars-keyframes.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.stars-rating-container {
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 10px;
+	color: white;
+	background-color: blue;
+	width: 250px;
+	line-height: 42.6px; /* more or less, this is the height of
+		each star background. */
+	border-radius: 5px;
+	box-shadow: 0 0 3px black;
+}
+
+.stars-rating:hover {
+	background-repeat: no-repeat;
+	background-image: url(../images/five-start_sprite.png);
+	animation-name: bg-position;
+	animation-duration: .6s;
+	/* animation-timing-function: steps(1); */
+}
+
+.five-stars:hover {
+	background-position: right top;
+}
+
+.star-four:hover {
+	background-position: right -42.6px;
+}
+
+.star-three:hover {
+	background-position: right -85.2px;
+}
+
+.star-two:hover {
+	background-position: right -127.8px;
+}
+
+.star-one:hover {
+	background-position: right bottom;
+}

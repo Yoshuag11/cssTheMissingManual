@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+.blue-container {
+	color: rgba(255, 255, 255, .5);
+	background-color: blue;
+}
+
+.one-quarter {
+	margin: 0;
+	/* margin-left: -2px; */
+	display: inline-block;
+	width: 25%;
+}
+
+.test {
+	margin: 15%;
+	border-style: solid;
+	border-color: black;
+	border-width: 1%;
+}

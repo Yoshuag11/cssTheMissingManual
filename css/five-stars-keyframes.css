@@ -1,0 +1,20 @@
+@keyframes bg-image {
+	from {
+		background-image: none;
+	}
+
+	to {
+		background-image: url(../images/five-start_sprite.png);
+		background-repeat: no-repeat;
+	}
+}
+
+@keyframes bg-position {
+	from {
+		background-position: right top;
+	}
+
+	to {
+		background-position: right bottom;
+	}
+}
