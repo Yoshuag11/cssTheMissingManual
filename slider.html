@@ -18,7 +18,6 @@
 			text-align: center;
 			width: 500px;
 			height: 300px;
-			position: relative;
 		}
 
 		#carousel ul {
@@ -37,22 +36,10 @@
 			border-bottom-width: 1px;
 			border-bottom-color: black;
 			z-index: 10;
-			transition-property: background-image;
-			transition-duration: 3s;
-		}
-
-		#carousel li:hover {
-			color: white;
-			font-weight: bold;
-			width: 500px;
-			height: 300px;
-			border-bottom-style: none;
-		}
-
-		#carousel span {
-			display: inline-block;
-			width: 500px;
-			height: 300px;
+			background-position: 500px;
+			background-repeat: no-repeat;
+			transition-property: background-position;
+			transition-duration: 1s;
 		}
 
 		#carousel li:first-child {
@@ -67,22 +54,31 @@
 			right: 0;
 		}
 
+		#carousel li:hover {
+			color: white;
+			font-weight: bold;
+			width: 500px;
+			height: 300px;
+			border-bottom-style: none;
+			z-index: 1;
+		}
+
 		#carousel li:hover:first-child {
 			text-align: left;
-			z-index: 1;
+			background-position: 0;
 			background-image: url(images/eiliv-aceron-1095887-unsplash-scaled.jpg);
 		}
 
 		#carousel li:nth-child(2):hover {
 			left: 0;
-			z-index: 1;
+			background-position: 0;
 			background-image:
 				url(images/joanna-kosinska-1097120-unsplash-scaled.jpg);
 		}
 
 		#carousel li:last-child:hover {
 			text-align: right;
-			z-index: 1;
+			background-position: 0;
 			background-image: url(images/victoria-shes-1071350-unsplash-scaled.jpg);
 		}
 	</style>

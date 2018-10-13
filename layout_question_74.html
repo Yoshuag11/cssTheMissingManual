@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			height: 100%;
+		}
+
+		h1 {
+			font-size: 3em;
+			font-weight: bold;
+		}
+
+		.header, .footer {
+			color: white;
+			background-color: gray;
+			padding: 10px;
+		}
+
+		.header {
+			font-family: Arial, Helvetica, sans-serif;
+			color: rgba(242, 188, 53, .3);
+			padding-left: 50%;
+			height: 70px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			z-index: 5;
+		}
+		.main-container {
+			position: absolute;
+			top: 70px;
+			bottom: 40px;
+			z-index: 1;
+			padding: 10px;
+		}
+
+		.sidebar {
+			right: 0;
+			width: 15%;
+			background-color: orange;
+		}
+
+		.footer {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 5;
+			height: 40px;
+			background-image: url(images/footer-scaled.jpeg);
+			background-repeat: no-repeat;
+			background-position: right;
+		}
+
+		/* .container {
+			margin-top: 70px;
+			margin-bottom: 40px;
+		} */
+
+		.content {
+			width: 42.5%;
+		}
+
+		.content:nth-child(2) {
+			margin-left: 42.5%;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>My Header</h1>
+	</header>
+	<div class="container">
+		<article class="main-container content"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+		  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+		  quae ab illo inventore veritatis et quasi architecto beatae vitae
+		  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+		  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+		  eos qui ratione voluptatem sequi nesciunt.</p></article>
+		<article class="main-container content"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+		  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+		  quae ab illo inventore veritatis et quasi architecto beatae vitae
+		  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+		  aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+		  eos qui ratione voluptatem sequi nesciunt.</p></article>
+		<aside class="main-container sidebar">Hey, look at me! I'm a sidebar = )</aside>
+	</div>
+	<footer class="footer">Copy right ©Daniel Gameros</footer>
+</body>
+</html>
