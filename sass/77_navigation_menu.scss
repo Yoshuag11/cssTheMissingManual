@@ -1,0 +1,147 @@
+$primary-background-color: black;
+$sub-menu-primary-background: #ff8566;
+$second-background-color: orange;
+$primary-font-color: white;
+$pump-space: 10px;
+$menu-width: 150px;
+$menu-top-width: 100px;
+$menu-control-height: 46px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.top-navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.menu-control {
+	font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+	background-color: #cce0ff;
+	text-transform: uppercase;
+
+	a {
+		height: $menu-control-height;
+		display: inline-block;
+		padding: 10px;
+		width: 80px;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		background-image: linear-gradient(to bottom, #002966, #99c2ff);
+
+		&:hover {
+			background-color: #3385ff;
+			background-image: linear-gradient(to bottom, #7300e6, #bf80ff);
+			color: white;
+		}
+
+		&:active {
+			color: black;
+			box-shadow: inset 0 0 2px black;
+		}
+	}
+}
+
+.menu {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: $menu-control-height;
+	color: $primary-font-color;
+	background-color: $primary-background-color;
+
+	.sub-menu {
+		position: absolute;
+		margin-top: $pump-space;
+		margin-left: -$pump-space;
+		width: $menu-top-width;
+		width: $menu-top-width;
+		visibility: hidden;
+		background-color: $sub-menu-primary-background;
+
+		li {
+			display: block;
+
+			&:hover {
+				color: $primary-font-color;
+				background-color: red;
+			}
+		}
+	}
+
+	li {
+		position: relative;
+		width: $menu-top-width;
+		padding: $pump-space;
+		list-style-type: none;
+
+		&:hover {
+			background-color: $second-background-color;
+
+			.sub-menu {
+				visibility: visible;
+			}
+		}
+	}
+}
+
+#left:target .menu {
+	width: $menu-width;
+	right: unset; // unset previous top value.
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	li {
+		width: $menu-width;
+	}
+
+	.sub-menu {
+		margin: 0;
+		top: 0;
+		width: $menu-width;
+		left: $menu-width;
+	}
+}
+
+
+#right:target .menu {
+	width: $menu-width;
+	left: unset; // unset previous top value.
+	top: 0;
+	bottom: 0;
+	right: 0;
+
+	li {
+		width: $menu-width;
+	}
+
+	.sub-menu {
+		margin: 0;
+		top: 0;
+		width: $menu-width;
+		right: $menu-width;
+	}
+}
