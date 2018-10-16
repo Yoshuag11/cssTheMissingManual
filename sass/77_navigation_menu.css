@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.top-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu-control {
+  font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  background-color: #cce0ff;
+  text-transform: uppercase;
+}
+
+.menu-control a {
+  height: 46px;
+  display: inline-block;
+  padding: 10px;
+  width: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#002966), to(#99c2ff));
+  background-image: linear-gradient(to bottom, #002966, #99c2ff);
+}
+
+.menu-control a:hover {
+  background-color: #3385ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7300e6), to(#bf80ff));
+  background-image: linear-gradient(to bottom, #7300e6, #bf80ff);
+  color: white;
+}
+
+.menu-control a:active {
+  color: black;
+  -webkit-box-shadow: inset 0 0 2px black;
+          box-shadow: inset 0 0 2px black;
+}
+
+.menu {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 46px;
+  color: white;
+  background-color: black;
+}
+
+.menu .sub-menu {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  width: 100px;
+  width: 100px;
+  visibility: hidden;
+  background-color: #ff8566;
+}
+
+.menu .sub-menu li {
+  display: block;
+}
+
+.menu .sub-menu li:hover {
+  color: white;
+  background-color: red;
+}
+
+.menu li {
+  position: relative;
+  width: 100px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.menu li:hover {
+  background-color: orange;
+}
+
+.menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+#left:target .menu {
+  width: 150px;
+  right: unset;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#left:target .menu li {
+  width: 150px;
+}
+
+#left:target .menu .sub-menu {
+  margin: 0;
+  top: 0;
+  width: 150px;
+  left: 150px;
+}
+
+#right:target .menu {
+  width: 150px;
+  left: unset;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#right:target .menu li {
+  width: 150px;
+}
+
+#right:target .menu .sub-menu {
+  margin: 0;
+  top: 0;
+  width: 150px;
+  right: 150px;
+}
+/*# sourceMappingURL=77_navigation_menu.css.map */

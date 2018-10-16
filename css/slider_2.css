@@ -1,0 +1,47 @@
+body {
+  font-family: monospace;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+#carousel {
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul {
+  overflow-x: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100%)[3];
+      grid-template-columns: repeat(3, 100%);
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+li {
+  font-size: 1.3em;
+  padding: 2em;
+  color: white;
+  width: calc(100% - 4em);
+  height: 150px;
+  display: inline-block;
+  scroll-snap-align: start;
+}
+
+li:nth-of-type(1) {
+  background-color: green;
+}
+
+li:nth-of-type(2) {
+  background-color: pink;
+}
+
+li:nth-of-type(3) {
+  background-color: purple;
+}
+/*# sourceMappingURL=slider_2.css.map */
