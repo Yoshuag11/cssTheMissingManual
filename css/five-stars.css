@@ -25,9 +25,9 @@ body {
 .stars-rating:hover {
 	background-repeat: no-repeat;
 	background-image: url(../images/five-start_sprite.png);
-	animation-name: bg-position;
-	animation-duration: .8s;
-	animation-delay: .5s;
+	/* animation-name: bg-position; */
+	/* animation-duration: .8s; */
+	/* animation-delay: .5s; */
 	/* animation-timing-function: steps(1); */
 }
 

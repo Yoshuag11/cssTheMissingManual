@@ -26,7 +26,7 @@ ul {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} 
+}
 /* end reset browser styles */
 
 body {
@@ -39,18 +39,19 @@ body {
 	border-right: none;
 	border-bottom: none;
 }
+
 p.caption {
 	font-size: 1.3em;
 	line-height: normal;
 	margin-bottom: 15px;
 }
+
 .gallery .figure p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.1em;
 	text-align: center;
 	line-height: normal;
 }
-
 
 h1 {
 	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
@@ -59,10 +60,12 @@ h1 {
 	padding: 5px 0 5px 8px;
 	color: #14556b;
 }
+
 p {
 	font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
 	margin: 10px 8px;
 }
+
 .copyright {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 1em;
