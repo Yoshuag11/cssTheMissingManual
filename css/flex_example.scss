@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html body {
 	margin: 0;
 	padding: 0;
@@ -5,12 +9,18 @@ html body {
 }
 
 .content {
-	width: 80%;
+	// width: 80%;
+	// width: 1000px;
+	// max-width: 1000px;
 	margin: 0 auto;
+	font-weight: bold;
 	display: flex; // It creates a flex container.
 	// flex-direction: column; // Default rows, other values are: column, row,
 		// column-reverse, row-reverse, and globals.
-	font-weight: bold;
+	flex-flow: row nowrap;
+	flex-flow: row wrap;
+	// border: 1px solid black;
+	outline: 1px solid black;
 }
 /** start flex items **/
 // The following elements are flex items because they will be used inside a flex
@@ -21,16 +31,22 @@ html body {
 	background-color: orange;
 	flex: 1; // "flex" value is composed of 3 values: flex-grow of this flex
 		// item, flex-shrink and flex-basis
-	flex: 1 0 400px;
 	flex: 1 1 400px;
+	flex: 1 1 100px;
+	flex: 1 1 200px;
+	// flex: 1 0 400px;
+	// flex: 1 1 400px;
 }
 
 .main {
 	order: 2;
 	padding: 10px;
 	flex: 3;
-	flex: 1 0 400px;
 	flex: 1 1 400px;
+	flex: 2 1 200px;
+	flex: 2 1 400px;
+	// flex: 1 0 400px;
+	// flex: 1 4 400px;
 }
 
 .sidebar2 {
@@ -39,7 +55,10 @@ html body {
 	background-color: purple;
 	padding: 10px;
 	flex: 1;
-	flex: 1 0 400px;
 	flex: 1 1 400px;
+	flex: 1 1 100px;
+	flex: 1 1 200px;
+	// flex: 1 0 400px;
+	// flex: 1 4 400px;
 }
 /** end flex items **/
