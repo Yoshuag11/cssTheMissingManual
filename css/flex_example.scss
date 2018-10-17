@@ -1,0 +1,45 @@
+html body {
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+
+.content {
+	width: 80%;
+	margin: 0 auto;
+	display: flex; // It creates a flex container.
+	// flex-direction: column; // Default rows, other values are: column, row,
+		// column-reverse, row-reverse, and globals.
+	font-weight: bold;
+}
+/** start flex items **/
+// The following elements are flex items because they will be used inside a flex
+// container.
+.sidebar1 {
+	order: 1;
+	padding: 10px;
+	background-color: orange;
+	flex: 1; // "flex" value is composed of 3 values: flex-grow of this flex
+		// item, flex-shrink and flex-basis
+	flex: 1 0 400px;
+	flex: 1 1 400px;
+}
+
+.main {
+	order: 2;
+	padding: 10px;
+	flex: 3;
+	flex: 1 0 400px;
+	flex: 1 1 400px;
+}
+
+.sidebar2 {
+	color: white;
+	order: 3;
+	background-color: purple;
+	padding: 10px;
+	flex: 1;
+	flex: 1 0 400px;
+	flex: 1 1 400px;
+}
+/** end flex items **/
